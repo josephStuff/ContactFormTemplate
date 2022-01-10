@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Contact Form Template</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/site.css">
+
+</head>
+
+<body>
+       <div class="container">
+           <h1>Contact Form Template </h1>
+           <div class="p-3 botder botder-2 rounded shadow-lg bg-light" id="formContainingDiv">
+               <form name="contactForm" class="row g-3 p-2">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12 col-md-6 form-group">
+                                <label for="inputfirstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" name="firstName" required />
+                            </div>
+                            <div class="col-12 col-md-6 form-group">
+                                <label for="inputLastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" name="firstName" required />
+                            </div>
+                            <div class="col-12 col-md-4 form-group">
+                                <label for="inputEmail" class="form-label">Email</label>                                
+                                <input type="email" class="form-control" name="email" required placeholder="example@email.com" />
+                            </div>
+                            <div class="col-12 col-md-4 form-group">
+                                <label for="inputPhone" class="form-label">Phone</label>                                
+                                <input type="tel" class="form-control" name="phone" required placeholder="555-555-0101" />
+                            </div>
+                            <div class="col-12 col-md-4 form-group">
+                                <label for="inputContactReason" class="form-label">Reason</label>                                
+                                <select class="form-select" name="contactReason">
+                                    <option>Choose One...</option>
+                                    <option value="freelance">Freelance Work</option>
+                                    <option value="contract">Contract Work</option>
+                                    <option value="Personal">Personal</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="col-12 form-group">
+                                <label for="inputMessage" class="form-label">Message</label>
+                                <textarea type="text" class="form-control" name="message" rows="4" 
+                                    placeholder="Write here">
+                                </textarea>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center pt-2">
+                                <button type="submit" class="btn btn-outline-primary btn-lg">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+               </form>
+           </div>
+       </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
