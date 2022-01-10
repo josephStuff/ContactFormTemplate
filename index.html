@@ -17,9 +17,9 @@
 
 <body>
        <div class="container">
-           <h1>Contact Form Template </h1>
+           <h1>Contact Form Template</h1>
            <div class="p-3 botder botder-2 rounded shadow-lg bg-light" id="formContainingDiv">
-               <form name="contactForm" class="row g-3 p-2">
+               <form name="contactForm" class="row g-3 p-2" netlify>
                     <div class="col-12">
                         <div class="row">
                             <div class="col-12 col-md-6 form-group">
@@ -49,14 +49,35 @@
                                 </select>
                             </div>
                             <div class="col-12 form-group">
-                                <label for="inputMessage" class="form-label">Message</label>
-                                <textarea type="text" class="form-control" name="message" rows="4" 
-                                    placeholder="Write Here"></textarea>
+                                <label for="inputMessage" class="form-label"></label>
+                                <div class="form-check form-check-inline">
+                                    <label for="inputMessage" class="form-label">Message</label>
+                                    <textarea type="text" class="form-control" name="message" rows="4" 
+                                        placeholder="Write Here"></textarea>
+                                </div>
+                                <div class="col-12 form-group">
+                                    <label class="form-label">How did you hear about us?</label>
+                                <div class="form-check">
+                                    <label for="inputFunnel" class="form-check-label">Radio</label>
+                                    <input type="checkbox" value="radio" class="form-check-input" name="funnel">
+                                </div>
+                                </div>
+                                <div class="form-check">
+                                    <label for="inputFunnel" class="form-check-label">Print</label>
+                                    <input type="checkbox" value="print" class="form-check-input" name="funnel" />
+                                </div>
+                                <div class="form-check">
+                                    <label for="inputFunnel" class="form-check-label">Website</label>
+                                    <input type="checkbox" value="print" class="form-check-input" name="funnel" />
+                                </div>
+                                <div class="form-check">
+                                    <label for="inputFunnel" class="form-check-label">Other</label>
+                                    <input type="checkbox" value="print" class="form-check-input" name="funnel" />
+                                </div>
+                                <div class="col-12 d-flex justify-content-center pt-2">
+                                    <button type="submit" class="btn btn-outline-primary btn-lg">Submit</button>
+                                </div>
                             </div>
-                            <div class="col-12 d-flex justify-content-center pt-2">
-                                <button type="submit" class="btn btn-outline-primary btn-lg">Submit</button>
-                            </div>
-                        </div>
                     </div>
                </form>
            </div>
